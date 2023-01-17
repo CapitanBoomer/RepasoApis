@@ -24,6 +24,8 @@ export class CatalogoService {
     })
   }
 
+
+
   public traerprod(){
   return this.datosProductos
 }

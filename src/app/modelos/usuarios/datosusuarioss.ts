@@ -3,7 +3,7 @@ export type Datosusuarioss = {
   password:string,
 }
 
-export type todoslosdatos ={
+export interface todoslosdatos {
   id: number ,
   username:string ,
   email:string ,
@@ -12,4 +12,8 @@ export type todoslosdatos ={
   gender:string ,
   image:string ,
   token:string,
+}
+
+export type perfildato = {
+  perfiles: Array<todoslosdatos>
 }
