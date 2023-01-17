@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tienda</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<form [formGroup]="formulario" (ngSubmit)="ingresardatos()">
+<ion-item>
+  <ion-label>usurio</ion-label>
+  <ion-input type="text" formControlName="username"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="stacked">Contraseña</ion-label>
+  <ion-input formControlName="password" type="password" placeholder="Ingresa tu contraseña"></ion-input>
+</ion-item>
+<ion-button type="submit" role="submit" >ingresa</ion-button>
+</form>
+</ion-content>

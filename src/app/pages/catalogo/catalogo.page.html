@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>catalogo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="datosproductos">
+    <ion-item *ngFor="let g of datosproductos.products ">
+      {{g.title}}
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>
